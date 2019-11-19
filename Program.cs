@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace BasicPart09_HashTable
 {
@@ -6,7 +7,23 @@ namespace BasicPart09_HashTable
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Hashtable product = new Hashtable();
+            product.Add("P001","IPHONE");
+            product.Add("P002","SAMSUNG");
+            product.Add("P003","OPPO");
+
+            foreach (string id in product.Keys)
+            {
+                Console.WriteLine(id);
+            }
+
+            /*foreach (string name in product.Values)
+            {
+                Console.WriteLine(name);
+            }*/
+
+
+            Console.ReadKey();
         }
     }
 }
